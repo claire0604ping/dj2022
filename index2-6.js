@@ -1,94 +1,56 @@
-let n1 = 9;
-let n2 = 0.1;
-let n3 = 0.2;
-let n4 = n2 + n3
-
-console.log(n4)
-
-let n5 = '9';
-let n6 = 9;
-
-console.log(n5 === n6);
+let n1 = 10;
+let n2 = 2;
+let s1 = '1';
+console.log(typeof n1);
+console.log(n1 + parseInt(s1));
 
 
-let s1 = '00000';
-let s2 = 'abc';
+console.log(n1 + n2);
+console.log(n1 - n2);
+console.log(n1 * n2);
+console.log(n1 / n2);
 
-let s3 = '\'國文\'';
-let s4 = ' 80';
+console.log(s1 + n1);
 
-console.log(s1 + s2);
-console.log(s3 + s4);
+// 餘數
+console.log(n1 % n2);
+// -----------------------------------------------
+//       0 1 2 3 4 5 6 7 8 9
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-let s5 = '國文:80';
+console.log(arr[9]);
 
-console.log(s5);
+// i++意思是   i=i+1
+// 布林 true為1 false為0
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2) {
+        console.log(arr[i] + ':是奇數');
+    }
 
-let s6 = 'your\n';
-
-s6 += 'chince\n'
-s6 += 'grouse' + s5;
-console.log(s6);
-
-let u1 = {};
-console.log(u1.name);
-
-let u2 = function(x, y) {
-    x + y;
-    return
-}
-
-console.log(u2(3, 4));
-
-
-let nu1 = null;
-console.log(nu1);
-
-let x1 = 59;
-let x2 = 100;
-let x3 = 80;
-let x4 = 40;
-let x5 = 90;
-
-console.log(x1)
-
-//         0    1   2   3   4
-let xx = [59, 100, 80, 40, 90]
-// index索引 value
-
-// console.log(xx[4]);
-
-
-for (let i = 0; i < xx.length; i++) {
-    console.log(xx[i]);
 };
+// -----------------------------------------------
+console.log(2 ** 10);
+// -----------------------------------------------
+let radius = 5;
+let area = radius * radius * 3.14159;
+console.log(area);
 
-let card = {
 
-    name: 'claire',
-    tel: '0908088112',
-    addr: 'Taiwan city',
-    '職稱':'工程師'
-};
-console.log(card.name);
-console.log(card.tel);
-console.log(card.addr);
+let area2 = radius ** 2 * 3.14159;
+console.log(area2);
 
-let y = 'name'
-console.log(card[y]);
+// -----------------------------------------------
 
-let x = '職稱';
-console.log(card[x]);
-console.log(card.職稱);
+let myName = 'claire';
+let age = '25';
+console.log(myName + ':' + age + 'years')
 
-let zz=123;
-let yy=zz;
+// -----------------------------------------------
 
-yy=456;
-console.log(zz);
+let a = 5;
+let b = '5';
+console.log(a == b);
+console.log(!(a == b));
 
-let card1=card;
-card1.name='123';
-console.log(card1);
-
-console.log(card.name);
+console.log(a === b);
+console.log(!(a === b));
