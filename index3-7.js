@@ -20,6 +20,6 @@ let card = {
       '職稱':'工程師'
     };
 
-    for(let i of card1){
+    for(let i in card){
       console.log(card[i]);
     }
