@@ -54,3 +54,21 @@ console.log(!(a == b));
 
 console.log(a === b);
 console.log(!(a === b));
+
+// ---判斷式-------&&-------------------------------------
+console.log(true && true)
+console.log(false && true)
+console.log(true && false)
+console.log(false && false)
+// ---判斷式--------||-----------------------------------
+console.log(false || false)
+console.log(true || true)
+console.log(false || true)
+console.log(true || false)
+
+
+// -----------------------------------------------
+let score = 60;
+//          條件判斷式(三元運算值)
+let show = (score >= 60) ? '分數及格' : '分數不及格';
+console.log(score, show);
